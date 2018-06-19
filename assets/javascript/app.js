@@ -13,10 +13,12 @@ $(document).ready(function () {
 
     //Points that the user has accumulated over the period of the game. 
     var userPoints = 0;
+    $('#userPoints').text(userPoints);
 
     //This is designed to increase the number points the user has.
     $('#C1').on('click', function () {
         userPoints += C1Points;
+        $('#userPoints').text(userPoints);
         alert("You now have this many points: " + userPoints);
         if (userPoints == target) {
             alert("You win!");
@@ -27,6 +29,8 @@ $(document).ready(function () {
     });
     $('#C2').on('click', function () {
         userPoints += C2Points;
+        $('#userPoints').text(userPoints);
+        
         alert("You now have this many points: " + userPoints);
         if (userPoints == target) {
             alert("You win!");
@@ -37,16 +41,21 @@ $(document).ready(function () {
     });
     $('#C3').on('click', function () {
         userPoints += C3Points;
+        $('#userPoints').text(userPoints);
+        
         alert("You now have this many points: " + userPoints);
         if (userPoints == target) {
             alert("You win!");
         }
         else if (userPoints > target) {
+            $('#userPoints').text(userPoints);
             alert("You lose");
         }
     });
     $('#C4').on('click', function () {
         userPoints += C4Points;
+        $('#userPoints').text(userPoints);
+        
         alert("You now have this many points: " + userPoints);
         if (userPoints == target) {
             alert("You win!");

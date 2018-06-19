@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script  src ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/stlye.css">
+
     <title>My inefficient Crystal Game</title>
 </head>
 
-<h1>
+<!-- <h1>
     Number to guess: 
 </h1>
 <h2 id= "guessNumber"></h2>
 <h2>
     Total Points: 
     <h3 id="TotalPoints"></h3> 
-</h2>
+</h2> -->
 
 <body>
-    
-    <div class = "crystalImage">
-        <img id = "C1" src="https://p.luckyretail.com/Uploadfile/20160530/002464/002464.jpg" alt="Crystal Image 1">
-        <img id = 'C2' src="https://vignette.wikia.nocookie.net/powerlisting/images/d/d3/2013-10-Blue-Crystal-Abstract.jpg/revision/latest?cb=20160227092023&format=original" alt="Crystal Image 2">
-        <img id = 'C3' src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/1/1c/2-Star_Crystal.png/revision/latest?cb=20150825213642" alt="Crystal Image 3">
-        <img id = 'C4' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtVKH95Jb1LNvfaL1enr5fq3KU4Ed1m5AB4FRAFbfMgXSU8mVI" alt="Crystal Image 4">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 id="Number_to_Guess"> Number to Guess:</h1>
+        </div>
+        <div class="col-md-6">
+            <h2 id="guessNumber"></h2>
+        </div>
+        <h2>Total Points</h2>
+        <h3 id="userPoints"></h3>
     </div>
-
-    <style type="text/css">
-   
-   #C1{
-        width: 100px;
-        height: 100px;
-    }
-    #C2{
-        width: 100px;
-        height: 100px;
-    }
-    #C3{
-        width: 100px;
-        height: 100px;
-    }
-    #C4{
-        width: 100px;
-        height: 100px;
-    }
-    
-    </style>  
+    <div class="row">
+        <div class="col-md-12">
+                <img id = "C1" src="https://p.luckyretail.com/Uploadfile/20160530/002464/002464.jpg" alt="Crystal Image 1">
+                <img id = 'C2' src="https://vignette.wikia.nocookie.net/powerlisting/images/d/d3/2013-10-Blue-Crystal-Abstract.jpg/revision/latest?cb=20160227092023&format=original" alt="Crystal Image 2">
+                <img id = 'C3' src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/1/1c/2-Star_Crystal.png/revision/latest?cb=20150825213642" alt="Crystal Image 3">
+                <img id = 'C4' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtVKH95Jb1LNvfaL1enr5fq3KU4Ed1m5AB4FRAFbfMgXSU8mVI" alt="Crystal Image 4">
+        </div>
+    </div>
     <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
