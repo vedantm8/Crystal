@@ -19,7 +19,6 @@ $(document).ready(function () {
     $('#C1').on('click', function () {
         userPoints += C1Points;
         $('#userPoints').text(userPoints);
-        alert("You now have this many points: " + userPoints);
         if (userPoints == target) {
             alert("You win!");
         }
@@ -30,8 +29,7 @@ $(document).ready(function () {
     $('#C2').on('click', function () {
         userPoints += C2Points;
         $('#userPoints').text(userPoints);
-        
-        alert("You now have this many points: " + userPoints);
+   
         if (userPoints == target) {
             alert("You win!");
         }
@@ -43,7 +41,7 @@ $(document).ready(function () {
         userPoints += C3Points;
         $('#userPoints').text(userPoints);
         
-        alert("You now have this many points: " + userPoints);
+       
         if (userPoints == target) {
             alert("You win!");
         }
