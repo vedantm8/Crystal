@@ -10,6 +10,12 @@ $(document).ready(function () {
     var C2Points = Math.floor((Math.random() * 10) + 1);
     var C3Points = Math.floor((Math.random() * 10) + 1);
     var C4Points = Math.floor((Math.random() * 10) + 1);
+    
+    //Function that starts when player wins
+    youWin = () => {
+        userPoints = 0;
+        target = Math.floor((Math.random() * 50) + 35);
+    }
 
     //Points that the user has accumulated over the period of the game. 
     var userPoints = 0;
@@ -21,6 +27,7 @@ $(document).ready(function () {
         $('#userPoints').text(userPoints);
         if (userPoints == target) {
             alert("You win!");
+            youWin();
         }
         else if (userPoints > target) {
             alert("You lose");
@@ -32,6 +39,7 @@ $(document).ready(function () {
    
         if (userPoints == target) {
             alert("You win!");
+            youWIn();
         }
         else if (userPoints > target) {
             alert("You lose");
@@ -44,6 +52,7 @@ $(document).ready(function () {
        
         if (userPoints == target) {
             alert("You win!");
+            youWin();
         }
         else if (userPoints > target) {
             $('#userPoints').text(userPoints);
@@ -56,6 +65,7 @@ $(document).ready(function () {
         
         if (userPoints == target) {
             alert("You win!");
+            youWin();
 
         }
         else if (userPoints > target) {
