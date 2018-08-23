@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     //This is the target that the user will need to achieve when trying to make for the 
-    var target = 50;
+    var target = Math.floor((Math.random() * 50) + 35);
     $("#guessNumber").text(target);
 
     //Points that the user gains every time he hits a specific crystal. Rnadom numbers go anywhere from 1-10
