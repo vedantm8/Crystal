@@ -54,7 +54,6 @@ $(document).ready(function () {
         userPoints += C4Points;
         $('#userPoints').text(userPoints);
         
-        alert("You now have this many points: " + userPoints);
         if (userPoints == target) {
             alert("You win!");
 
